@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - Projet Zero Energy</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #add8e6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/wind-energy-img.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 18px;
+            overflow: hidden;
+            width: 100%;
+            text-align: center;
+        }
+        nav a {
+            color: #add8e6;
+            text-decoration: none;
+            font-size: 19px;
+            padding: 10px 15px;
+            transition: background-color 0.5s ease-in-out;
+            display: inline-block;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #add8e6;
+            color: #fff;
+        }
+        .container {
+            padding-top: 150px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .info-section {
+            width: 55%;
+            padding: 20px;
+            background-color: #add8e6;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: whitesmoke;
+        }
+        .info-section h2 {
+            margin-bottom: 10px;
+        }
+        .info-section p:first-child {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .info-section p:last-child {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 0;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            text-align: right;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #555;
+        }
+        .footer a:hover {
+            background-color: #add8e6;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Calculatrice</a>
+        <a href="#">Type d'énergie</a>
+    </nav>
+    <div class="container">
+        <div class="info-section">
+            <p><em>Bienvenue sur notre site dédié à la production d'énergie et à la réduction de l'empreinte carbone.</em></p>
+            <p>Vous envisagez de construire un immeuble "zero energy"? Assurez-vous de concevoir une enveloppe thermique efficace, d'utiliser des matériaux écologiques et d'installer des systèmes d'énergie renouvelable.</p>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <a href="#">Contactez-nous</a>
+    </div>
+</body>
+</html>

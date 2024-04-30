@@ -1,0 +1,103 @@
+        /*css properties common to the 3 pages of the site*/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #add8e6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            /*the img is cut if its dimensions are too big*/
+            overflow: hidden;
+            width: 100%; 
+            text-align: center; 
+        }
+        nav a {
+            color: #16a7d7;
+            text-decoration: none;
+            font-size: 19px;
+            padding: 5px 15px;
+            /*change the background color*/
+            transition: background-color 0.5s ease-in-out;
+            /*the elements accept the height and width properties*/
+            display: inline-block;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #add8e6;
+            color: #fff;
+            text-decoration: none;
+        }
+        #changeBackgroundButton {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none;
+            font-size: 52px;
+            color: #f0c47c;
+            cursor: pointer;
+            z-index: 9999;
+            text-decoration: none;
+        }
+        #changeBackgroundButton:hover {
+            color: #1d2d32;            
+        }
+        .container {
+            text-align: center;
+            padding-top: 75px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .info-section {
+            width: 75%;
+            padding: 20px;
+            background-color: #add8e6;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: whitesmoke;
+        }
+        .info-section h2 {
+            margin-bottom: 10px;
+        }
+        .info-section p:first-child {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .info-section p:last-child {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            right: 0px;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            text-align: right;
+            color: #777;
+        }        
+
+        .footer a {
+            text-decoration: none;
+            color: #16a7d7;
+            margin-right: 20px;
+        }
+        .footer a:hover {
+            background-color: #add8e6;
+            color: #fff;
+        }
+    

@@ -24,9 +24,15 @@
             font: italic smaller sans-serif;
             text-align: center;
         }
-        .eurostat_p {
+        .par_remove {
             width: 400px;
             text-align: justify;
+        }
+
+        #container {
+            display: grid;
+            /*fr is a unit that enables to take fractions of the remaining space*/
+            grid-template-columns: 1fr 2fr;
         }
 
         #email {
@@ -43,25 +49,47 @@
     </nav>
 
     <div class="content">
-        <h1>Découvrez quel type de production d'énergie permettra à votre économie d'être compétitive</h1>
+        <h1>Découvrez les tendances dans le domaine de la production d'énergie pour votre pays</h1>
 
         <form method="post" action="post.php" name="form" id="form">
             <label for="country">Le pays sur lequel vous aimeriez recevoir des renseignements: </label>
             <input type="text" size="30" name="country" id="country" tabindex = "1">
             <button type="button" name="lancerSim" id="lancerSim" onclick="info1()">Lancer la simulation</button><br>
-            <!--<img src="images/non-renewable.jpg" alt="Non renewable sources of energy scheme">-->
-            <div class="eurostat_p">
-                <p id="par_remove">Selon Eurostat, dans l'Union européenne la part d'énergie issue des sources renouvelables en 2022 s'élevait à 23%. Quand 
-                    aux objectifs futurs sur les énergies renouvelables la nouvelle directive de l'UE entrée en vigueur en novembre 2023 a
-                    révisé à la hausse ce coeffient en le fixant à 42.5% contre 32% établie précédemment.</p>
-            </div>
-            <figure id="fig_remove">
-                <img src="images/renewable.jpg" alt="Renewable sources of energy scheme">
-                <figcaption>Schema des sources d'énergie renouvelables</figcaption>
-            </figure>
         </form>
+
+        <div id="container">
+            <div id="col-1">
+                <p class="par_remove">Selon Eurostat, dans l'Union européenne la part d'énergie issue des sources renouvelables en 2022 
+                    s'élevait à 23%. Quand aux objectifs futurs sur les énergies renouvelables la nouvelle directive de l'UE entrée 
+                    en vigueur en novembre 2023 a révisé à la hausse ce coeffient en le fixant à 42.5% contre 32% établie précédemment.</p>
+                <figure>
+                    <img src="./images/renewable.jpg" alt="Renewable sources of energy scheme">
+                    <figcaption>Schema des sources d'énergie renouvelables</figcaption>
+                </figure>
+            </div>
+
+            <div id="col-2">
+                <p class="par_remove">Les énergies renouvelables sont des énergies dérivées de processus naturels en perpétuel 
+                    renouvellement. Ces énergies peuvent être générée par des sources suivantes:</p>
+                <ol>
+                    <li>soleil <i>(panneux photovoltaîque ou thermique)</i></li>
+                    <li>vent <i>(éolienne)</i></li>
+                    <li>eau des cours d'eau et des océans <i>(hydraulique)</i></li>
+                    <li>biomasse</li>
+                    <ul type="square">
+                        <li>solide <i>(bois et déchets d'origine biologique)</i></li>
+                        <li>liquide <i>(biocarburants)</i></li>
+                        <li>gazeuse <i>(biogaz)</i></li>
+                    </ul>
+                    <li>chaleur de la terre <i>(géothermie)</i></li>
+                </ol>
+            </div>
+        </div>
+
+        <!--adding data with this div tag-->
+        <div id="par_add"></div>
     </div>
-    <!--<img src="images/imagePageAccueil1.avif" alt="">-->
+
     <div class="footer">
         <p id="email">Compléter notre formulaire en cliquant sur le lien <i>Contactez-nous</i> afin de recevoir ces informations sur votre courriel.</p>
         <a href="#">Contactez-nous</a>

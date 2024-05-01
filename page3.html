@@ -1,93 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script src="scriptPage3.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Type d'énergie</title>
+    <script src="scriptPage3.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-color: #add8e6;
-            /*min-height: 15vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;*/
+        .content {
+            margin-left: 10px;
         }
-
-        nav {
-            background-color: #f0f0f0;
-            padding: 18px;
-            /*the img is cut if its dimensions are too big*/
-            overflow: hidden;
-            width: 100%; 
-            text-align: center; 
+        figure {
+            width: 300px;
         }
-        nav a {
-            color: #add8e6;
-            text-decoration: none;
-            font-size: 19px;
-            padding: 10px 15px;
-            /*change the background color*/
-            transition: background-color 0.5s ease-in-out;
-            /*the elements accept the height and width properties*/
-            display: inline-block;
-            margin: 0 5px;
-        }
-        nav a:hover {
-            background-color: #add8e6;
-            color: #fff;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            padding: 15px 0;
-            background-color: #fff;
-            border-top: 1px solid #ddd;
-            text-align: right;
-        }
-
-        .footer a {
-            text-decoration: none;
-            color: #555;
-        }
-        .footer a:hover {
-            background-color: #add8e6;
-            color: #fff;
-        }
-        img {
-            max-width: 40%; 
-        }
-
-        .content{
+        figure img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
             padding: 5px;
+            width: 300px;
+        }
+        figcaption {
+            font: italic smaller sans-serif;
+            text-align: center;
+        }
+        .eurostat_p {
+            width: 400px;
+            text-align: justify;
         }
 
+        #email {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <nav>
-        <a href="#">Accueil</a>
+        <a href="./page1.html">Accueil</a>
         <a href="#">Calculatrice</a>
-        <a href="#">Type d'énergie</a>
+        <a href="./page3.html">Type d'énergie</a>
     </nav>
 
     <div class="content">
-        <h1>Découvrez quel type de production d'énergie permettra à votre économie d'être attractive</h1>
+        <h1>Découvrez quel type de production d'énergie permettra à votre économie d'être compétitive</h1>
 
         <form method="post" action="post.php" name="form" id="form">
             <label for="country">Le pays sur lequel vous aimeriez recevoir des renseignements: </label>
             <input type="text" size="30" name="country" id="country" tabindex = "1">
-            <button type="button" name="lancerSim" id="lancerSim" onclick="info1()">Lancer la simulation</button>
+            <button type="button" name="lancerSim" id="lancerSim" onclick="info1()">Lancer la simulation</button><br>
+            <!--<img src="images/non-renewable.jpg" alt="Non renewable sources of energy scheme">-->
+            <div class="eurostat_p">
+                <p>Selon Eurostat, dans l'Union européenne la part d'énergie issue des sources renouvelables en 2022 s'élevait à 23%. Quand 
+                    aux objectifs futurs sur les énergies renouvelables la nouvelle directive de l'UE entrée en vigueur en novembre 2023 a
+                    révisé à la hausse ce coeffient en le fixant à 42.5% contre 32% établie précédemment.</p>
+            </div>
+            <figure>
+                <img src="images/renewable.jpg" alt="Renewable sources of energy scheme">
+                <figcaption>Schema des sources d'énergie renouvelables</figcaption>
+            </figure>
         </form>
     </div>
     <!--<img src="images/imagePageAccueil1.avif" alt="">-->
     <div class="footer">
+        <p id="email">Compléter notre formulaire en cliquant sur le lien <i>Contactez-nous</i> afin de recevoir ces informations sur votre courriel.</p>
         <a href="#">Contactez-nous</a>
     </div>
 </body>

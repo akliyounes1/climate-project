@@ -1,0 +1,170 @@
+
+
+
+body {
+   
+ 
+    font-family: verdana;
+    background-color: rgba(0, 105, 140, 0.423);
+    background-image:linear-gradient(rgba(52, 80, 134, 0.489),rgba(46, 173, 168, 0.579)) , url(background.png);
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+h2 {
+   margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(53, 160, 182);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 2cm;
+    width: 20cm;
+    position: relative;
+    right: 15%;
+    color: aliceblue;
+    text-shadow: 3px;
+    box-shadow: 3px;
+    border-radius: 15px;
+}
+div {
+    text-align: center;
+    background-color: rgba(100, 141, 141, 0.393);
+    border-radius: 5px;
+    background-size: contain;
+    margin-bottom: 15px;
+    width: 300px ;
+    position: relative;
+    left: 23%;
+ 
+}
+.nav{
+    
+    background-color: rgb(237, 255, 252);
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: -10px;
+    left: 0px;
+    width: 103%;
+    text-shadow: 5px;
+    height: 40px;
+    border-radius: 0;
+  
+}
+a{
+    color: rgb(0, 103, 171);
+    position: relative;
+    right: 10px;
+    font-weight: 600;
+}
+a:hover{
+    color: rgb(0, 255, 242);
+}
+.arriere{
+    background-color: rgba(211, 255, 243, 0.867);
+    position: relative;
+    left: 30%;
+    width: 15cm;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.type{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#moto_carburant{
+    width: 5cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+#voiture_carburant{
+    width: 5cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+#bus_carburant{
+    width: 5cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+#avion_carburant{
+    width: 5cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+#camion_carburant{
+    width: 5cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.engin{
+ background-color: azure;
+ border-radius: 5px;
+ text-transform: uppercase;
+ font-weight: 800;
+
+}
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: rgb(3, 15, 2);
+  
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%;
+}
+button:hover {
+    background-color: #45a049;
+}
+#resultats {
+   
+    background-color: white;
+    margin-bottom: 15px;
+    height: max-content;
+    
+}
+.vide{
+    background-color: rgba(121, 121, 121, 0);
+}
+#resultats p {
+    margin-bottom: 15px;
+  
+}
+.fin{
+    
+    background-color: rgba(200, 245, 255, 0.976);
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+    bottom: -3%;
+    left: 0px;
+    width: 103%;
+    text-shadow: 5px;
+    height: 40px;
+    border-radius: 0;
+    margin-left: -1cm;
+    margin-right: -1cm;
+}
+
